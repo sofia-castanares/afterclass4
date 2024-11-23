@@ -1,0 +1,1 @@
+Este proyecto se centra en la creación de uñas esculpidas personalizadas que reflejen la individualidad y estilo único de cada cliente. Utilizando técnicas avanzadas de esculpido y una amplia gama de colores y diseños, el objetivo es ofrecer un servicio de alta calidad que combine arte y moda.

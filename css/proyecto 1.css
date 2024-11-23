@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  box-sizing: border-box;  
+}
+
+body {
+    font-family: Raleway, Tahoma, sans-serif;
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    background-color: lightgrey;
+    color: black;
+}
+
+header {
+    border: 1px solid purple;
+}
+
+li{
+    display: inline;
+    margin: .5%;
+}
+ul{
+    list-style-type: none;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+.header_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    border: 1px solid palevioletred;
+    padding: 0.5rem;
+}
+
+section {
+    border: 1px solid palevioletred;
+    margin: 1%;
+    border-radius: 4px;
+}
+
+footer {
+    border-radius: 8px;
+    padding: 5%;
+    color: black;
+    font-size: 3vw;
+    background: thistle;
+    background: radial-gradient(circle, lightpink);
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: rgb(255, 0, 221);
+    font-family: 'Afacad Flux', Verdana, Tahoma, sans-serif;
+  }
+
+.presentacion {
+    padding: 4%;
+    background-color: thistle;
+}
+
+.form_container {
+    text-align: center;
+}
+
+.maps_container {
+    text-align: center;
+}
+
+.comentarios_cont {
+    text-align: center;
+}
+
+.grid_comentarios {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+    'item1 item1 item1'
+    'item2 item3 item4' 
+    'item2 item5 item5'
+}
+
+
+
+.grid_comentarios > div {
+    border: 1px solid palevioletred;
+    padding: 4%;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+/* Medias Queries*/
+
+@media (240px < width <=  1080px) {
+    body {
+        background-color: lightgrey;
+    }
+    .grid_comentarios {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'item1 item1'
+        'item2 item2'
+        'item3 item3' 
+        'item4 item4'
+        'item5 item5'
+    }
+}
